@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/fruit?serverTimezone=UTC
+    username: root
+    password: 980920
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#url访问图片路径为/image
+  mvc:
+   static-path-pattern: /image/**
+#图片保存路径，访问方式为 http://localhost:8080/image/1.jpg
+  resources:
+     static-locations: file:E://picture-up/
+
